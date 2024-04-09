@@ -50,7 +50,6 @@ struct Stack
 	}
 };
 
-Node* createNode(Item_Tower t);
 void hanoi_Tower(int n, char a, char b, char c);
 
 int main()
@@ -64,18 +63,6 @@ int main()
 	return 0;
 }
 
-
-Node* createNode(Item_Tower t)
-{
-	Node* node = new Node;
-	if (node == NULL)
-	{
-		printf("khong du bo nho!\n");
-		return NULL;
-	}
-	node->item = t;
-	node->next = NULL;
-}
 void hanoi_Tower(int n, char a, char b, char c)
 {
 	Item_Tower t;
